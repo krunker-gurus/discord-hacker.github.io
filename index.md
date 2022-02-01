@@ -1,72 +1,14 @@
-**Note:** I'm not affilated with Discord and do not encourage using any of these hacks. Use everything here at your own risk. This is meant for **educational purposes only** and using these codeblocks may result in your account being disabled/terminated.
-
-# Community
-
-<details>
-  <summary>We're switching to Matrix!</summary>
-  
-Matrix is a community-based, decentralized, privacy friendly, end-to-end encrypted (super secure), uncensorable and open source messaging protocol, which unlike discord promotes custom clients and modifications. There are multiple different clients available, the most popular one (and also the refrence implementation) is Element. It runs on every OS and even has a pretty good web version. For more information check out https://matrix.org and https://element.io.<br>
-I often get asked: "*If Matrix/Element is so super awesome, why didn't you start using earlier?*"<br>
-Well actually I've been using Matrix for quite a long time now, Anonymous already switched to it many years ago. For me Matrix always has been something serious, I never really thought about using it for this Discord Stuff.
-</details>
-
-Here is the Invite Link to the community: https://matrix.to/#/#discord-oxygen:matrix.org
-
-The main community is on matrix, most channels are encrypted and can only be accessed from within matrix.
-For those of you who can't use Matrix we created the Discord Server, its bridged to the Community (=every message you sent in Discord automatically appears in matrix and vice-versa)<br>
-Here's the Invite Link: https://discord.gg/vs979cxECA (3rd server)<br>
-
-
-Please don't use console hacks not sent by me, or you might risk loosing your account.<br>
-I'll update this invite regularly, if e.g. my account gets compromised or Discord shuts down the Server, I will create a new Account, a new Server and will then update the invite above.<br>
-If the invite doesn't work anymore, it means the Server got deleted and you need to wait until I can create a new Account.
-
-# Inner workings of Discord
-
-<details>
-  <summary>Click here</summary>
-
-## Discord Token Syntax
-
-<details>
-<table>
-  <tr><th></th><th>Example</th></tr>
-  <tr><td>User ID Encoded in Base64</td><td>NTzQvPcLBacBmgajXQc7QAaU</td></tr>
-  <tr><td>Dot</td><td>.</td></tr>
-  <tr><td>Timestamp -epoch(1293840000) converted to base64</td><td>XCgboz</td></tr>
-  <tr><td>Dot</td><td>.</td></tr>
-  <tr><td>HMAC consiting of 27 chars (uppercase/lowercase letters, numbers, - or _)</td><td>c4t51kFWSEmdmaPnKoyUuu8E78E</td></tr>
-</table>
-There is this awesome diagram from <a href="https://github.com/hxr404/Discord-Console-hacks/issues/2">#2</a> wich shows the exact token structure:<br><br>
-<img src="https://user-images.githubusercontent.com/34555296/120932740-4ca47480-c6f7-11eb-9270-6fb3fbbd856c.png"></img> <br>
-</details>
-<br>
-
-## Discords Internal Server Structure
-
-<details>
-Check out this Article about Reverse Engineering Discord, and the proof that Discord acts as a MITM (Intercepts your traffic and decrypts your messsages): <a href="https://medium.com/tenable-techblog/lets-reverse-engineer-discord-1976773f4626">https://medium.com/tenable-techblog/lets-reverse-engineer-discord-1976773f4626</a><br>
-That means, Discord Staff can read all of your messages... (still better than Telegram, where anyone can read your messages xD)<br>
-If you need privacy, use Signal or Threema or Briar. (or all of them :)
-
-![grafik](https://user-images.githubusercontent.com/55095883/116671170-e9f5e580-a9a0-11eb-98f9-3bcd65b9fdbf.png)
-
-<br>
-<sup>How sending Audioo/Video Messages in Discord Works.</sup>
-</details>
-<br>
-</details>
-<br>
-
-# Console Hacks
+# Discord Hacker
+Forked hrx404
+# Discord Console Hacks
 
 <details>
   <summary>Click here</summary>
   
 
-## Be Careful!
+## Info
 
-As stated in my Disclaimer I don't promote using any kind of client modifications. Please don't use the code found here for illegal / hacking purposes, or you might risk seeing this error message:<br>
+As stated in hxr404's Disclaimer I don't promote using any kind of client modifications. Please don't use the code found here for illegal / hacking purposes, or you might risk seeing this error message:<br>
 
 ![image](https://user-images.githubusercontent.com/55095883/134189043-4da003de-4829-4d60-888a-6014ebb5c2b8.png)
 
@@ -80,43 +22,7 @@ It only works on Desktop Versions (Windows, Linux, MacOS), not on Mobile
 3. Paste the script in
 4. Press enter
 
-## Obtaining your Token
-
-<details>
-<summary>Copies your Token into the Clipboard.</summary>
-
-paste this into the Console (while being logged in)
-
-```js
-window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m of Object.keys(req.c).map((x) => req.c[x].exports).filter((x) => x)) {if (m.default && m.default.getToken !== undefined) {return copy(m.default.getToken())}if (m.getToken !== undefined) {return copy(m.getToken())}}}]); console.log("%cWorked!", "font-size: 50px"); console.log(`%cYou now have your token in the clipboard!`, "font-size: 16px")
-```
-
-The token should be in your Clipboard.
-</details>
-<br>
-
-## Logging in using Token
-
-<details>
-<summary>Modifies the Login screen so you can use Tokens to log in.</summary>
-
-paste this into the Console (CTRL + SHIFT + I) on the login screen (you need to be logged out)
-
-```js
-function login(e) {setInterval(() => {window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m of Object.keys(req.c).map((x) => req.c[x].exports).filter((x) => x)) {if (m.default && m.default.setToken !== undefined) {return m.default.setToken(e)}if (m.setToken !== undefined) {return m.setToken(e)}}}]);console.log("%cWorked!", "font-size: 50px");}, 50), setTimeout(() => {window.location.reload()}, 2500)}function buttonlogin(){login(document.getElementsByClassName("inputDefault-3FGxgL input-2g-os5")[0].value)}var element;(element=document.getElementsByClassName("marginBottom8-emkd0_ button-1cRKG6 button-f2h6uQ lookFilled-yCfaCM colorBrand-I6CyqQ sizeLarge-3mScP9 fullWidth-fJIsjq grow-2sR_-F")[0]).addEventListener("click",buttonlogin),(element=document.getElementsByClassName("marginBottom20-315RVT")[0]).parentElement.removeChild(element),(element=document.getElementsByClassName("colorStandard-21JIj7 size14-3fJ-ot h5-2RwDNl title-3hptVQ defaultMarginh5-3Jxf6f")[0]).innerHTML="Token",element.id="Token",(element=document.getElementsByClassName("transitionGroup-bPT0qU qrLogin-1ejtpI")[0]).parentElement.removeChild(element),(element=document.getElementsByClassName("verticalSeparator-2r9gHa")[0]).parentElement.removeChild(element);
-```
-
-and log in<br>
-Note that this doesn't work with Bot tokens, Bot tokens are different than user tokens, and Discord doesn't support this.<br>
-</details>
-
-![exampleimage](https://user-images.githubusercontent.com/55095883/105732516-d0bc4380-5f30-11eb-959f-9fae0ddc9b7b.png)
-
-<br>
-<sup>Login Screen after running the hack</sup>
-<br><br>
-
-## Enable Staff Mode
+  ## Enable Staff Mode
 
 <details>
 <summary>Enables some hidden features and sets your client to staff mode</summary>
