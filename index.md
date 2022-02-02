@@ -1,6 +1,6 @@
 # Discord Hacker
 Forked hrx404
-# Discord Console Hacks
+# Discord Hacks
 
 
   ## How to use these Hacks
