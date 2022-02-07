@@ -26,3 +26,6 @@ window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m
 window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m of Object.keys(req.c).map((x) => req.c[x].exports).filter((x) => x)) {if (m.default && m.default.getCurrentUser !== undefined) {return m.default.getCurrentUser().flags = -1;}if (m.getCurrentUser !== undefined) {return m.getCurrentUser().flags = -1}}}]);window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m of Object.keys(req.c).map((x) => req.c[x].exports).filter((x) => x)) {if (m.default && m.default.getCurrentUser !== undefined) {return m.default.getCurrentUser().public_flags += 1;}if (m.getCurrentUser !== undefined) {return m.getCurrentUser().public_flags += 1}}}]);
 console.clear()
 console.log("Enjoy Free Nitro Perks!")
+
+![unknown](https://user-images.githubusercontent.com/98807948/152745937-a0a7b314-1d08-4ddc-862a-c79780b9ae01.png)
+
