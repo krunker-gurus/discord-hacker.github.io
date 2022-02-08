@@ -30,8 +30,3 @@ console.log("Enjoy Free Nitro Perks!")
 
 
 
-
-
-#Screenshots
-![unknown](https://user-images.githubusercontent.com/98807948/152745937-a0a7b314-1d08-4ddc-862a-c79780b9ae01.png)
-
